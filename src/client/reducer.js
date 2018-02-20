@@ -5,7 +5,7 @@ const initialState = {
   token: null,
 }
 
-const reducer = function clientReducer (state = initialSate, action) {
+const reducer = function clientReducer (state = initialState, action) {
   switch (action.type) {
     case CLIENT_SET:
       return {
