@@ -1,7 +1,7 @@
 import { take, fork, cancel, call, put, cancelled } from 'redux-saga/effects'
 
 // We'll use this function to redirect to different routes based on cases
-import { browserHistory } from '../history'
+import browserHistory from '../history'
 
 // Helper for api errors
 import { handleApiErrors } from '../lib/api-errors'
@@ -23,7 +23,7 @@ import {
   CLIENT_UNSET,
 } from '../client/constants'
 
-const loginUrl = `${process.env.REACT_APP_API_URL}/api/Clients/login`
+const loginUrl = `${process.env.REACT_APP_LOCAL_API_URL}/api/v1/login`
 
 function loginApi (email, password) {
   return fetch(loginUrl, {
@@ -39,7 +39,15 @@ function loginApi (email, password) {
     .catch((error) => { throw error })
 }
 
-function* logout () {}
+function* logout () {
+  // dispatches the CLIENT_UNSET action
+  yield put(unsetClient())
+  // remove our token
+  localStorage.removeItem('token')
+
+  // redirect to the /login screen
+  browserHistory.push('/login')
+}
 
 function* loginFlow (email, password) {
   let token
