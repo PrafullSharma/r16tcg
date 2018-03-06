@@ -10,7 +10,6 @@ import {
 } from './constants'
 
 function* logout () {
-  console.log('fired first')
   // dispatches the CLIENT_UNSET action
   yield put(unsetClient())
   // remove our token
@@ -18,7 +17,6 @@ function* logout () {
 
   // redirect to the /login screen
   browserHistory.push('/login')
-  console.log('fired last')
 }
 
 export function *watchLogoutRequested() {

@@ -85,6 +85,7 @@ Login.propTypes = {
     errors: PropTypes.array,
   }),
 }
+
 // Grab only the piece of state we need
 const mapStateToProps = state => ({
   login: state.login,
