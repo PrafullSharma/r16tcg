@@ -55,6 +55,7 @@ function* loginFlow (email, password) {
     // try to call to our loginApi() function.  Redux Saga
     // will pause here until we either are successful or
     // receive an error
+    console.log(loginApi)
     token = yield call(loginApi, email, password)
 
     // inform Redux to set our client token, this is non blocking so...
