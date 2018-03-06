@@ -7,7 +7,7 @@ import '../App.css'
 class Navigation extends Component {
   render () {
     const Btnlogin = () => {
-      if(this.props.client.id) {
+      if(this.props.client.token) {
         return <li><Link to="/logout">Logout</Link></li>
       } else {
         return <li><Link to="/login">Login</Link></li>
