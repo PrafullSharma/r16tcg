@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
   Router,
   Route,
@@ -16,7 +16,7 @@ import NotFoundPage from './common/NotFoundPage'
 
 const Routes = () => (
   <Router history={history}>
-    <div>
+    <Fragment>
       <Navigation/>
       <Switch>
         <Route exact path="/" component={Home}/>
@@ -27,7 +27,7 @@ const Routes = () => (
         <PrivateRoute path="/widgets" redirectTo={'/login'} component={Widgets} />
         <Route component={NotFoundPage} />
       </Switch>
-    </div>
+    </Fragment>
   </Router>
 );
 
