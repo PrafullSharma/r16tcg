@@ -1,0 +1,26 @@
+#homepage {
+
+  .homeslide {
+
+    .slick-slide {
+      height: 200px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .slick-arrow {
+      z-index: 1;
+    }
+
+    .slick-prev {
+      left: 25px;
+    }
+
+    .slick-next {
+      right: 25px;
+    }
+
+  }
+
+}

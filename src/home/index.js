@@ -1,13 +1,13 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import HomeBanner from './homeBanner'
 
 class Home extends Component {
   render() {
     return (
-      <Fragment>
+      <div id="homepage">
         <HomeBanner/>
         <h1 className="title">Homepage</h1>
-      </Fragment>
+      </div>
     )
   }
 }

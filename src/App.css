@@ -5002,3 +5002,18 @@ a.thumbnail {
     flex-direction: column; }
   .large-flex-dir-column-reverse {
     flex-direction: column-reverse; } }
+
+#homepage .homeslide .slick-slide {
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#homepage .homeslide .slick-arrow {
+  z-index: 1; }
+
+#homepage .homeslide .slick-prev {
+  left: 25px; }
+
+#homepage .homeslide .slick-next {
+  right: 25px; }
