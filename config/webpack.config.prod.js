@@ -146,7 +146,7 @@ module.exports = {
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,
-            include: [paths.appSrc, paths.foundationSrc],
+            include: [paths.appSrc, paths.foundationSrc], // foundation sites folder path added to babel-loader
             loader: require.resolve('babel-loader'),
             options: {
               compact: true,
