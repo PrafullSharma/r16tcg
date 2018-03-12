@@ -23,23 +23,14 @@ class Navigation extends Component {
           <div className="top-bar-left">
             <ul className="dropdown menu" data-dropdown-menu>
               <li className="menu-text">Site Title{/*<img src={logo} className="App-logo" alt="logo" />*/}</li>
-              <li className="has-submenu"><Link to="/">Home</Link></li>
-              <li>
-                <Link to="/widgets">Widget</Link>
-                <ul className="submenu menu vertical" data-submenu>
-                  <li><a href="#0">One</a></li>
-                  <li><a href="#0">Two</a></li>
-                  <li><a href="#0">Three</a></li>
-                </ul>
-              </li>
-              <li><Link to="/signup">Signup</Link></li>
-              <Btnlogin/>
             </ul>
           </div>
           <div className="top-bar-right">
-            <ul className="menu">
-              <li><input type="search" placeholder="Search" /></li>
-              <li><button type="button" className="button">Search</button></li>
+            <ul className="dropdown menu" data-dropdown-menu>
+              <li className="has-submenu"><Link to="/">Home</Link></li>
+              <li><Link to="/widgets">Widget</Link></li>
+              <li><Link to="/signup">Signup</Link></li>
+              <Btnlogin/>
             </ul>
           </div>
         </div>

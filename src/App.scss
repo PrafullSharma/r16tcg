@@ -1,7 +1,13 @@
-// Zurb Foundation - don't edit below files
+// Don't edit below files
+// Zurb Foundation
 @import './styles/settings';
 @import '../node_modules/foundation-sites/scss/foundation.scss';
 @include foundation-everything;
 
+// Slick Carousel
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+// files ypu can edit start
 // our project file
 @import "./styles/colors";

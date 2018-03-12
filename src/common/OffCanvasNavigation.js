@@ -16,14 +16,7 @@ class OffCanvasNavigation extends Component {
         {/*Menu*/}
         <ul className="vertical menu">
           <li><Link to="/">Home</Link></li>
-          <li>
-            <Link to="/widgets">Widget</Link>
-            <ul className="nested vertical menu">
-              <li><a href="#0">One</a></li>
-              <li><a href="#0">Two</a></li>
-              <li><a href="#0">Three</a></li>
-            </ul>
-          </li>
+          <li><Link to="/widgets">Widget</Link></li>
           <li><Link to="/signup">Signup</Link></li>
           <Btnlogin/>
         </ul>
