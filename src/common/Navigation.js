@@ -13,7 +13,7 @@ class Navigation extends Component {
       }
     }
     return (
-      <header>
+      <header className="site-header">
         <div className="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="large">
           <button className="menu-icon" type="button" data-toggle="offCanvas">&nbsp;</button>
           <div className="title-bar-title">Menu</div>
