@@ -6,7 +6,8 @@ import {
 } from 'react-router-dom';
 import history from './history'
 import { PrivateRoute } from './privateRoute'
-import Navigation from './common/Navigation'
+import Header from './common/Navigation'
+import Footer from './common/Footer'
 import OffCanvasNavigation from './common/OffCanvasNavigation'
 import Home from './home/index'
 import Login from './login/index'
@@ -19,7 +20,7 @@ const Routes = () => (
     <Fragment>
       <OffCanvasNavigation/>
       <div className="off-canvas-content" data-off-canvas-content>
-        <Navigation/>
+        <Header/>
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/login" component={Login}/>
@@ -28,6 +29,7 @@ const Routes = () => (
           <PrivateRoute path="/widgets" redirectTo={'/login'} component={Widgets} />
           <Route component={NotFoundPage} />
         </Switch>
+        <Footer/>
       </div>
     </Fragment>
   </Router>
